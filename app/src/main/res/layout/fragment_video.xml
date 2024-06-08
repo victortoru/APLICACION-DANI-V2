@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".CamaraFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/info"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:src="@drawable/info_icono"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <TextView
+            android:id="@+id/portofolio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="22dp"
+            android:text="Aeropuertos en Directo"
+            android:textColor="@color/black"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toEndOf="@+id/info"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/volver2"
+            android:layout_width="79dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/volver_blanco"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.954"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <View
+            android:id="@+id/linea"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginTop="18dp"
+            android:background="@drawable/linea_blanca_gris"
+            app:layout_constraintTop_toBottomOf="@+id/portofolio" />
+
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/videoViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingEnd="5dp"
+            android:paddingStart="5dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/linea" />
+
+        <ImageView
+            android:id="@+id/imagen1"
+            android:layout_width="183dp"
+            android:layout_height="107dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="42dp"
+            android:src="@drawable/bcn_air"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/videoViewPager" />
+
+        <ImageView
+            android:id="@+id/imagen2"
+            android:layout_width="170dp"
+            android:layout_height="108dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/paris_air"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen1"
+            app:layout_constraintTop_toBottomOf="@+id/videoViewPager" />
+
+        <ImageView
+            android:id="@+id/imagen3"
+            android:layout_width="175dp"
+            android:layout_height="114dp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="47dp"
+            android:src="@drawable/london_air"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagen1" />
+
+        <ImageView
+            android:id="@+id/imagen4"
+            android:layout_width="184dp"
+            android:layout_height="114dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="12dp"
+            android:layout_marginStart="20dp"
+            android:src="@drawable/prague_air"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imagen3"
+            app:layout_constraintTop_toBottomOf="@+id/imagen2" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

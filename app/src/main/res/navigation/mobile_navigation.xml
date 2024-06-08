@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/loginFragment">
+
+    <fragment
+        android:id="@+id/aviones_list"
+        android:name="com.example.aplicacion_dani.Aviones_list"
+        android:label="fragment_aviones_list"
+        tools:layout="@layout/fragment_aviones_list" >
+        <action
+            android:id="@+id/action_aviones_list_to_maps"
+            app:destination="@id/maps" />
+    </fragment>
+    <fragment
+        android:id="@+id/aeropuertos_list"
+        android:name="com.example.aplicacion_dani.Aeropuertos_list"
+        android:label="fragment_aeropuertos_list"
+        tools:layout="@layout/fragment_aeropuertos_list" >
+        <action
+            android:id="@+id/action_aeropuertos_list_to_maps"
+            app:destination="@id/maps" />
+    </fragment>
+    <fragment
+        android:id="@+id/maps"
+        android:name="com.example.aplicacion_dani.Maps"
+        android:label="fragment_maps2"
+        tools:layout="@layout/fragment_maps" >
+        <action
+            android:id="@+id/action_maps_to_aeropuertos_list"
+            app:destination="@id/aeropuertos_list" />
+        <action
+            android:id="@+id/action_maps_to_aviones_list"
+            app:destination="@id/aviones_list" />
+        <action
+            android:id="@+id/action_maps_to_inicioSesionFragment"
+            app:destination="@id/inicioSesionFragment" />
+        <action
+            android:id="@+id/action_maps_to_noticiasFragment"
+            app:destination="@id/noticiasFragment" />
+        <action
+            android:id="@+id/action_maps_to_loginFragment"
+            app:destination="@id/loginFragment" />
+        <action
+            android:id="@+id/action_maps_to_camaraFragment"
+            app:destination="@id/camaraFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/inicioSesionFragment"
+        android:name="com.example.aplicacion_dani.InicioSesionFragment"
+        android:label="fragment_inicio_sesion"
+        tools:layout="@layout/fragment_inicio_sesion" >
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_maps"
+            app:destination="@id/maps" />
+        <action
+            android:id="@+id/action_inicioSesionFragment_to_loginFragment"
+            app:destination="@id/loginFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.aplicacion_dani.LoginFragment"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_inicioSesionFragment"
+            app:destination="@id/inicioSesionFragment" />
+        <action
+            android:id="@+id/action_loginFragment_to_maps"
+            app:destination="@id/maps" />
+    </fragment>
+    <fragment
+        android:id="@+id/camaraFragment"
+        android:name="com.example.aplicacion_dani.CamaraFragment"
+        android:label="fragment_camara"
+        tools:layout="@layout/fragment_camara" >
+        <action
+            android:id="@+id/action_camaraFragment_to_maps"
+            app:destination="@id/maps" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticiasFragment"
+        android:name="com.example.aplicacion_dani.NoticiasFragment"
+        android:label="fragment_noticias"
+        tools:layout="@layout/fragment_noticias" >
+        <action
+            android:id="@+id/action_noticiasFragment_to_maps"
+            app:destination="@id/maps" />
+        <action
+            android:id="@+id/action_noticiasFragment_to_noticia_grande_2"
+            app:destination="@id/noticia_grande_2" />
+        <action
+            android:id="@+id/action_noticiasFragment_to_noticia_grande_1"
+            app:destination="@id/noticia_grande_1" />
+    </fragment>
+    <fragment
+        android:id="@+id/videoFragment"
+        android:name="com.example.aplicacion_dani.VideoFragment"
+        android:label="fragment_video"
+        tools:layout="@layout/fragment_video" />
+    <fragment
+        android:id="@+id/noticia_grande_1"
+        android:name="com.example.aplicacion_dani.noticia_grande_1"
+        android:label="fragment_noticia_grande_1"
+        tools:layout="@layout/fragment_noticia_grande_1" >
+        <action
+            android:id="@+id/action_noticia_grande_1_to_noticiasFragment"
+            app:destination="@id/noticiasFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/noticia_grande_2"
+        android:name="com.example.aplicacion_dani.noticia_grande_2"
+        android:label="fragment_noticia_grande_2"
+        tools:layout="@layout/fragment_noticia_grande_2" >
+        <action
+            android:id="@+id/action_noticia_grande_2_to_noticiasFragment"
+            app:destination="@id/noticiasFragment" />
+    </fragment>
+</navigation>

@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:ignore="SpeakableTextPresentCheck"
+    android:fillViewport="true"
+    android:background="#134161"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <ImageView
+            android:id="@+id/imagen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/logologin"
+            app:layout_constraintHorizontal_bias="0.495"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/texto"
+            android:layout_width="231dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="Sácale el máximo partido a FlightScan|\ con la versión Premium!"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="17sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imagen" />
+
+        <TextView
+            android:id="@+id/texto2"
+            android:layout_width="231dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="25dp"
+            android:text="Contrata una cuenta premium por sólo 1,35€ al mes"
+            android:textAlignment="center"
+            android:textColor="#9E9D9D"
+            android:textSize="17sp"
+            android:textStyle="normal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto" />
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditText"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:hint="Cuenta de correo"
+            android:inputType="textEmailAddress"
+            android:textColorHint="#918F8F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/texto2"
+            tools:ignore="MissingConstraints">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/textInputEditPasswd"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:hint="Contraseña"
+            android:inputType="textEmailAddress"
+            android:pathData="M8 0H147C151.418 0 155 3.58172 155 8V20C155 24.4183 151.418 28 147 28H8C3.58172 28 0 24.4183 0 20V8C0 3.58172 3.58172 0 8 0Z"
+            android:strokeWidth="2"
+            android:strokeColor="#818181"
+            android:textColorHint="#918F8F"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.526"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditText">
+
+        </com.google.android.material.textfield.TextInputEditText>
+
+        <ImageView
+            android:id="@+id/google"
+            android:layout_width="55dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="32dp"
+            android:layout_marginBottom="28dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/google"
+            app:layout_constraintBottom_toTopOf="@+id/IniciaSesion"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <ImageView
+            android:id="@+id/facebook"
+            android:layout_width="55dp"
+            android:layout_height="63dp"
+            android:layout_marginStart="66dp"
+            android:layout_marginEnd="66dp"
+            android:layout_marginBottom="28dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/facebook"
+            app:layout_constraintBottom_toTopOf="@+id/IniciaSesion"
+            app:layout_constraintEnd_toStartOf="@+id/apple"
+            app:layout_constraintStart_toEndOf="@+id/google" />
+
+        <ImageView
+            android:id="@+id/apple"
+            android:layout_width="55dp"
+            android:layout_height="63dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="28dp"
+            android:adjustViewBounds="true"
+            android:src="@drawable/apple"
+            app:layout_constraintBottom_toTopOf="@+id/IniciaSesion"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <Button
+            android:id="@+id/IniciaSesion"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#3B6FFF"
+            android:text="Inicia Sesión"
+            app:layout_constraintBottom_toTopOf="@+id/NuevaCuenta"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <Button
+            android:id="@+id/NuevaCuenta"
+            android:layout_width="340dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="25dp"
+            android:backgroundTint="#6C6A6A"
+            android:text="Nueva Cuenta"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Has olvidado la contraseña?"
+            android:textColor="#0D7EC8"
+            android:textColorHint="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.655"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textInputEditPasswd"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

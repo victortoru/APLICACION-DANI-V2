@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".noticia_grande_2"
+    android:background="@color/white">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/volver2"
+        android:layout_width="79dp"
+        android:layout_height="29dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/volver_blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.954"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imagen_noticia2"
+        android:layout_width="409dp"
+        android:layout_height="273dp"
+        android:layout_marginTop="4dp"
+        android:adjustViewBounds="true"
+        android:src="@drawable/maestranza_2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/volver2" />
+
+    <TextView
+        android:id="@+id/texto_noticia"
+        android:layout_width="364dp"
+        android:layout_height="47dp"
+        android:layout_marginTop="24dp"
+        android:text="La Maestranza de Albacete tendrá un nuevo hangar para los Botijos"
+        android:textColor="@color/black"
+        android:textSize="17sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imagen_noticia2" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="364dp"
+        android:layout_height="206dp"
+        android:layout_marginTop="8dp"
+        android:text="Tres meses después de que elMinisterio para la Transición Ecológica y el Reto Demográfico y el Ministerio de Defensa llegasen a un acuerdo para la construcción de un hangar en la Maestranza Aérea de Albacete para la flota de aviones Canadair CL-215T/ Bombardier CL-415 (los denominados Botijos por su misión de aviones para la lucha contra los incendios forestales), en el marco del Plan de Recuperación, Transformación y Resiliencia, se ha autorizado en Consejo de Ministros la modificación de los límites de gasto que permite que se lleve a cabo dicha construcción, con cargo a la aplicación presupuestaria “Gestión forestal sostenible”."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.489"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/texto_noticia" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="364dp"
+        android:layout_height="78dp"
+        android:text="El hangar podrá albergar a dos aviones a un tiempo y, además del mantenimiento normal programado, en el mismo se llevará a cabo la recientemente aprobada modernización de la aviónica de diez de estos aviones."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+    <TextView
+        android:layout_width="364dp"
+        android:layout_height="50dp"
+        android:text="El presupuesto, a desembolsarse entre 2023 y 2024, es de 7.087.897,06. 4.430.000 en 2023 y 2.657.897,06 en 2024."
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
